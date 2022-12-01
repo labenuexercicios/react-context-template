@@ -1,8 +1,10 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import { GlobalContext } from "../../contexts/GlobalContext";
 import { goToHomePage, goToPokedexPage } from "../../routes/coordinator";
 import { Container } from "./Header.styled";
 
 function Header() {
+
   // hook para saber nosso path atual
   const location = useLocation();
 
